@@ -72,6 +72,7 @@ clear: both;
   Margin:5%;
   border-radius:5%;
   background-color:#4aaaa5;
+  width:100%;
 }
 /*I DONT KNOW HOW TO MAKE ONE OF THESE
 hover changes color from #4aaaa5 to #666
@@ -85,19 +86,23 @@ hover changes color from #4aaaa5 to #666
   max-height: 67px;
 }
 /*----------<main>------------------------*/
+.media-heading{
+    border-bottom: 3px solid #4aaaa5;
+}
+
 /*----------<main>Index-------------------*/
 /*----------<main>Contact-----------------*/
 /*----------<main>Portfolio---------------*/
 
 /*not causing index content to disappear when "none"*/
 #indexFormat{
-  display: none;
+  display: block;
 }
 #contactFormat{
   display: none;
 }
 #portfolioFormat{
-  display: block;
+  display: none;
 }
 
 #mainFormat{
@@ -111,10 +116,7 @@ hover changes color from #4aaaa5 to #666
   float:left;
   margin: 0 20px 5px 0;
 }
-#mainLeft{
-  /*I want to build in some spacing here*/
-  border-left: 3px solid #4aaaa5;
-}
+
 .floatLeft{
   float:left;
 }

@@ -71,15 +71,20 @@ hover changes color from #4aaaa5 to #666
   background-color: #666;
 }
 /*----------<main>------------------------*/
-.indexFormat{
+.index, .contact, .portfolio{
+  background-image:url(../images/ep_naturalwhite/ep_naturalwhite.png);
+}
+/*not causing index content to disappear when "none"*/
+#indexFormat{
+  display: none;
+}
+#contactFormat{
+  display: none;
+}
+#portfolioFormat{
   display: block;
 }
-.contactFormat{
-  display:none;
-}
-.portfolioFormat{
-  display:none;
-}
+
 #mainFormat{
   background-image:url(../images/ep_naturalwhite/ep_naturalwhite.png);
   margin: 5% auto;
@@ -90,6 +95,10 @@ hover changes color from #4aaaa5 to #666
   width:200px;
   float:left;
   margin: 0 20px 5px 0;
+}
+
+.floatLeft{
+  float:left;
 }
 /*----------<footer>BootStraps------------*/
 .navbar-fixed-bottom{

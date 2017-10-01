@@ -16,6 +16,9 @@
   <!--nav-->
   <header class="nav posRel headerSize row">
     <div class="container">
+      <!--
+      this is running a basic javascript to verify that my js is attached properly
+      -->
       <a href="#" onclick="demo()" class="btn btn-primary btn-lg">David Cox</a>
       <nav>
         <!-- set resting color to #4aaaa5-->
@@ -27,35 +30,22 @@
       </nav>
     </div>
   </header>
-<div>
-  <nav>
-  <ul class="btn-group-vertical" role="group">
-    <li><button type="button" onclick="index()" class="btn btn-primary btn-block mainBtnFormat">About</button></li>
 
-    <li><button type="button" onclick="portfolio()" class="btn btn-primary btn-block mainBtnFormat">Portfolio</button></li>
-
-    <li><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></li>
-  </ul>
-</nav>
-</div>
   <!--main -->
-  <main class=" indexFormat container row" id="mainFormat">
-    <div id="indexFormat">
+  <main class="container row" id="mainFormat">
+    <div>
+      <!--js buttons -->
       <section class="col-lg-2">
-        <!--index-->
-
         <nav>
           <ul class="btn-group-vertical" role="group">
-            <li><a href="#" onclick="index()"><button type="button" onclick="index()" class="btn btn-primary btn-block mainBtnFormat">About</button></a></li>
-
-            <li><a href="#" onclick="portfolio()"><button type="button" onclick="portfolio()" class="btn btn-primary btn-block mainBtnFormat">Portfolio</button></a></li>
-
-            <li><a href="#" onclick="contact()"><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></a></li>
+            <li><button type="button" onclick="index()" class="btn btn-primary btn-block mainBtnFormat">About</button></li>
+            <li><button type="button" onclick="portfolio()" class="btn btn-primary btn-block mainBtnFormat">Portfolio</button></li>
+            <li><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></li>
           </ul>
         </nav>
       </section>
-
-      <section class="col-lg-6">
+      <!--index-->
+      <section class="col-lg-8 index" id="indexFormat">
         <div class="row">
           <h1>About Me | David Cox</h1>
         </div>
@@ -74,21 +64,90 @@
           </p>
         </div>
       </section>
+      <!--contact-->
+      <section class="col-lg-8 contact" id="contactFormat">
+        <div class="row">
+          <h1>Contact</h1>
+        </div>
+        <div class="row clearfix">
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
+        </div>
+      </section>
 
-      <section class="sidebar col-lg-4">
-        <div id="connect">
+      <!--portfolio-->
+      <section class="col-lg-8 portfolio" id="portfolioFormat">
+        <div class="row">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="row">
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
+
+            <h3>Hangman</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+
+            <h3>RPG Game</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+
+            <h3>Trivia Game</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+
+            <h3>Rutgers Info Widget</h3>
+          </div>
+          <div class="work">
+            <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+
+            <h3>Rock Paper Scissors</h3>
+          </div>
+        </div>
+
+      </section>
+      <section class="sidebar col-lg-2">
+        <div class="row">
           <h2>Connect with Me</h2>
-
-          <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-          <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-          <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+        </div>
+        <div class="row media">
+          <!--media-left from bs not working,
+          added floatLeft class-->
+            <div class="media floatLeft">
+              <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+            </div>
+            <div class="media floatLeft">
+              <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+            </div>
+            <div class="media floatLeft">
+              <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+            </div>
         </div>
       </section>
     </div>
-    <!--portfolio-->
-    <div id="portfolioFormat">
-      <section class="portfolioFormat main-section">
-        <h1>Portfolio</h1>
+
+    <!--portfolio
+    <div class="row">
+      <section class="col-lg-3 portfolioFormat main-section">
+
 
         <div class="work">
           <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
@@ -117,9 +176,14 @@
         </div>
 
       </section>
-    </div>
+      <section class="col-lg-9">
+      </section>
+    </div>-->
+
+
+
     <!--contact-->
-    <div id="contactFormat">
+    <!--<div id="contactFormat">
       <section class="contactFormat main-section">
         <h1>Contact</h1>
 
@@ -142,7 +206,7 @@
         </form>
 
       </section>
-    </div>
+    </div>-->
   </main>
 
   <!--footer-->

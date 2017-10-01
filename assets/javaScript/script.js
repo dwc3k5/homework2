@@ -16,12 +16,16 @@ function contact(){
   getPortfolio.style.display = 'none';
   getContact.style.display = 'block';
 }
-/* goes off the index button
-function index() {
-    document.getElementById("demo").src= "assets/images/pikachu.jpg";
+/*
+test that js is connected and working
+goes off the "David Cox" top left corner
+*/
+function demo() {
+    document.getElementById("test").src= "assets/images/pikachu.jpg";
+    document.getElementById("test2").innerHTML= "oh God Please Work";
 }
 function index2() {
-  document.getElementById("demo2").innerHTML= "oh God Please Work";
+
 }
 
 /**/

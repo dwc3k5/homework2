@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About | David Cox</title>
+  <!--javascript-->
+  <script type="text/javascript" src="assets/javaScript/script.js"></script>
+  <!--css reset bootstrap style-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--nav-->
+  <header class="nav posRel headerSize row">
+    <div class="container">
+      <a href="index.html" class="btn btn-primary btn-lg">David Cox</a>
+      <nav>
+        <!-- set resting color to #4aaaa5-->
+        <ul class="nav nav-tabs navbar-right posAbs">
+          <li role="presentation"><a href="index.html">GitHub</a></li>
+          <li role="presentation"><a href="portfolio.html">LinkedIn</a></li>
+          <li role="presentation"><a href="contact.html">Stack Overflow</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div>
+  <nav>
+  <ul class="btn-group-vertical" role="group">
+    <li><a href="#" onclick="index()">About</a></li>
+
+    <li><a href="#" onclick="portfolio()">Portfolio</a></li>
+
+    <li><a href="#" onclick="contact()"><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></a></li>
+  </ul>
+</nav>
+</div>
+  <!--main -->
+  <main class=" indexFormat container row" id="mainFormat">
+    <div id="indexFormat">
+      <section class="col-lg-2">
+        <!--index-->
+
+        <nav>
+          <ul class="btn-group-vertical" role="group">
+            <li><a href="#" onclick="index()"><button type="button" onclick="index()" class="btn btn-primary btn-block mainBtnFormat">About</button></a></li>
+
+            <li><a href="#" onclick="portfolio()"><button type="button" onclick="portfolio()" class="btn btn-primary btn-block mainBtnFormat">Portfolio</button></a></li>
+
+            <li><a href="#" onclick="contact()"><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="col-lg-6">
+        <div class="row">
+          <h1>About Me | David Cox</h1>
+        </div>
+        <div class="row clearfix">
+          <div id="mainImage">
+            <img src="assets/images/portrait.jpg" class="auth-image img-circle autoFill" alt="Your Name">
+          </div>
+          <p>
+            Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.
+          </p>
+
+          <p>
+            Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;.
+            Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon
+            cotton candy cake pudding.
+          </p>
+        </div>
+      </section>
+
+      <section class="sidebar col-lg-4">
+        <div id="connect">
+          <h2>Connect with Me</h2>
+
+          <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+          <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+          <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+        </div>
+      </section>
+    </div>
+    <!--portfolio-->
+    <div id="portfolioFormat">
+      <section class="portfolioFormat main-section">
+        <h1>Portfolio</h1>
+
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
+
+          <h3>Hangman</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+
+          <h3>RPG Game</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+
+          <h3>Trivia Game</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+
+          <h3>Rutgers Info Widget</h3>
+        </div>
+        <div class="work">
+          <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+
+          <h3>Rock Paper Scissors</h3>
+        </div>
+
+      </section>
+    </div>
+    <!--contact-->
+    <div id="contactFormat">
+      <section class="contactFormat main-section">
+        <h1>Contact</h1>
+
+        <form id="contact-form">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required="required"></textarea>
+            </li>
+          </ul>
+          <input type="submit">
+        </form>
+
+      </section>
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer class="nav navbar-fixed-bottom row">
+    <div class="col-lg-4">
+      &nbsp;
+    </div>
+    <div class="container col-lg-4">
+      Copyright &copy; 2016 Your Name
+    </div>
+    <div class="col-lg-4">
+      &nbsp;
+    </div>
+  </footer>
+</body>
+
+</html>

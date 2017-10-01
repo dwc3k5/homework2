@@ -1,5 +1,14 @@
 /* I was having difficulty getting fonts to change, so I went into the bootstrap code, stripped the pieces I wanted to edit, put them in here, and modified elements*/
 /*----------Bootstrap edits---------------*/
+/*----------Universal---------------------*/
+/*----------<header>----------------------*/
+/*----------<main>------------------------*/
+/*----------<main>Index-------------------*/
+/*----------<main>Contact-----------------*/
+/*----------<main>Portfolio---------------*/
+/*----------<footer>----------------------*/
+
+/*----------Bootstrap edits---------------*/
 
 
 /*----------Universal---------------------*/
@@ -70,10 +79,16 @@ hover changes color from #4aaaa5 to #666
 .mainBtnFormat > button > a:hover{
   background-color: #666;
 }
-/*----------<main>------------------------*/
-.index, .contact, .portfolio{
-  background-image:url(../images/ep_naturalwhite/ep_naturalwhite.png);
+
+.media-object{
+  max-width: 67px;
+  max-height: 67px;
 }
+/*----------<main>------------------------*/
+/*----------<main>Index-------------------*/
+/*----------<main>Contact-----------------*/
+/*----------<main>Portfolio---------------*/
+
 /*not causing index content to disappear when "none"*/
 #indexFormat{
   display: none;
@@ -96,10 +111,14 @@ hover changes color from #4aaaa5 to #666
   float:left;
   margin: 0 20px 5px 0;
 }
-
+#mainLeft{
+  /*I want to build in some spacing here*/
+  border-left: 3px solid #4aaaa5;
+}
 .floatLeft{
   float:left;
 }
+
 /*----------<footer>BootStraps------------*/
 .navbar-fixed-bottom{
   height:10%;
@@ -111,6 +130,10 @@ hover changes color from #4aaaa5 to #666
   margin: auto;
 }
 /*----------<footer>----------------------*/
+.copyright{
+  /*having trouble getting this to work as a %*/
+  margin-top: 10px;
+}
 
 
 
